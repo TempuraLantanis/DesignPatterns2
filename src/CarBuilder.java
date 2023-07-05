@@ -17,11 +17,10 @@ public class CarBuilder implements CarBuilderInterface {
 
     @Override
     public void buildInterior(int chair, String stuurPos){
-        String interiorDescription = "The interior contains "
-                + Integer.toString(chair) +
+        car.interiorStyle= "The interior contains "
+                + chair +
                 "with the driverposition at" + stuurPos;
 
-        car.interiorStyle = interiorDescription;
 
     }
 
