@@ -10,6 +10,13 @@ public class CarBuilder implements CarBuilderInterface {
     }
 
     @Override
+    public void initiateCar(String model) {
+        car.model = model;
+
+    }
+
+
+    @Override
     public void buildEngine(Engine engine) {
         car.engine = engine;
     }
@@ -20,6 +27,8 @@ public class CarBuilder implements CarBuilderInterface {
         car.interiorStyle= "The interior contains "
                 + chair +
                 "with the driverposition at" + stuurPos;
+
+        car.passengers = chair;
 
 
     }

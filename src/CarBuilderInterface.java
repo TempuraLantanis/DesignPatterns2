@@ -2,6 +2,7 @@ public interface CarBuilderInterface {
 
 
     void reset();
+    void initiateCar(String model);
     void buildEngine(Engine engine);
     void buildInterior(int chairs, String stuurPos);
     void buildEntertainmentSystem(boolean entertainmentSystemExists, String... entertainmentSystemModel);

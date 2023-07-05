@@ -2,7 +2,7 @@ import java.util.Random;
 
 
 public class Car {
-    String passengers;
+    int passengers;
     String model;
     String licenseNumber;
     Engine engine;

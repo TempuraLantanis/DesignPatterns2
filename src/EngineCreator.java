@@ -3,13 +3,5 @@ public abstract class EngineCreator {
     Engine result;
 
 
-    public Engine createEngine(){
-
-
-
-
-        return result;
-
-
-    }
+    public abstract Engine createEngine(String model);
 }
