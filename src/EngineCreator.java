@@ -1,7 +1,14 @@
-public class EngineCreator {
+public abstract class EngineCreator {
+
+    Engine result;
 
 
-    public void createEngine(){
+    public Engine createEngine(){
+
+
+
+
+        return result;
 
 
     }
