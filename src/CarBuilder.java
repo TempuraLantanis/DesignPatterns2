@@ -23,6 +23,7 @@ public class CarBuilder implements CarBuilderInterface {
 
     @Override
     public void buildEntertainmentSystem(boolean value) {
+        System.out.println("building the Entertainment System");
 
     }
 
