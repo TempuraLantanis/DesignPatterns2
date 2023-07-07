@@ -30,7 +30,6 @@ public class CarBuilder implements CarBuilderInterface {
 
         car.passengers = chair;
 
-
     }
 
     @Override
@@ -39,6 +38,9 @@ public class CarBuilder implements CarBuilderInterface {
             System.out.println("building the Entertainment System");
             car.entertainmentSystem = "The entertainment system exists with the model" + entertainmentSystemModel;
 
+        }
+        else{
+            car.entertainmentSystem = "This car doesn't have an entertainment system";
         }
     }
 

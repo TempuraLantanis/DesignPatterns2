@@ -19,9 +19,13 @@ public class Car {
     }
 
 
-
     public void drive(){
         System.out.println("Driving car with license" + this.licenseNumber);
+
+    }
+
+    public void activateEntertainment(){
+        System.out.println(entertainmentSystem);
 
     }
 
