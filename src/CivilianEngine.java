@@ -18,7 +18,9 @@ public class CivilianEngine implements EngineInterface {
 
     }
 
-
+    public String getEngineStats(){
+        return "Model: " + model + ", Horse power: " + horsePower + ", Cylinders: " +  cylinders + ", Fuel type: " + fuelType; 
+    }
 
 
 

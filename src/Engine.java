@@ -10,8 +10,6 @@ public abstract class Engine implements EngineInterface {
     public void startEngine(){
         System.out.println("Starting" + model +" engine with " + horsePower +" horsepower");
         System.out.println("Engine has" + cylinders + " cylinders");
-
-
     }
 
     @Override
