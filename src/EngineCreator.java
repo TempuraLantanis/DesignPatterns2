@@ -1,7 +1,4 @@
 public abstract class EngineCreator {
 
-    Engine result;
-
-
-    public abstract Engine createEngine(String model);
+    public abstract EngineInterface createEngine(String model);
 }

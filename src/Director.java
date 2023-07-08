@@ -8,7 +8,7 @@ public class Director {
     }
 
 
-    public Car createMSport(String model){
+    public void createMSport(String model){
         this.builder.reset();
         changeBuilder(new CarBuilder());
         SportEngineCreator engineCreator = new SportEngineCreator();
@@ -17,17 +17,16 @@ public class Director {
         this.builder.buildEntertainmentSystem(true, "Celadan");
         this.builder.buildColor("Red");
         this.builder.buildAutoTransmission(false);
-        return builder.getResult();
+
     }
 
 
-    public Car makeSuv(String model){
+    public void makeSuv(String model){
         this.builder.reset();
         changeBuilder(new CarBuilder());
         CivilianEngineCreator engineCreator = new CivilianEngineCreator();
         this.builder.initiateCar("SUV");
 
-        return this.builder.getResult();
     }
 
 

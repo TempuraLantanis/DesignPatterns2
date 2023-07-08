@@ -8,7 +8,7 @@ public interface CarBuilderInterface {
     void buildEntertainmentSystem(boolean entertainmentSystemExists, String... entertainmentSystemModel);
     void buildColor(String color);
     void buildAutoTransmission(boolean automatic);
-    Car getResult();
+
 
 
 }

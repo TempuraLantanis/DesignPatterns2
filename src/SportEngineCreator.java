@@ -2,10 +2,9 @@ public class SportEngineCreator extends EngineCreator{
 
 
     @Override
-    public Engine createEngine(String model){
+    public SportEngine createEngine(String model){
+        SportEngine engine = new SportEngine(model, 200);
 
-        result.model = model;
-
-        return result;
+        return engine;
     }
 }

@@ -1,4 +1,6 @@
 public class PolicyBuilder implements CarBuilderInterface{
+    Policy policy;
+
     @Override
     public void reset() {
 
@@ -10,7 +12,7 @@ public class PolicyBuilder implements CarBuilderInterface{
     }
 
     @Override
-    public void buildEngine(Engine engine) {
+    public void buildEngine(EngineInterface engine) {
 
     }
 
@@ -34,8 +36,7 @@ public class PolicyBuilder implements CarBuilderInterface{
 
     }
 
-    @Override
-    public Car getResult() {
+    public Policy getResult() {
         return null;
     }
 }

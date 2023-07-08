@@ -1,13 +1,9 @@
 public class CivilianEngineCreator extends EngineCreator{
+
+
     @Override
-
-
-
-
-    public Engine createEngine(String model) {
-        this.result.model = model;
-        this.result.cylinders = 4;
-        this.result.fuelType  = "Gasoline";
-        return result;
+    public CivilianEngine createEngine(String model) {
+        CivilianEngine engine = new CivilianEngine(model);
+        return engine;
     }
 }
