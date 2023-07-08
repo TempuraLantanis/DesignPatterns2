@@ -1,13 +1,20 @@
 public class CivilianEngine implements EngineInterface {
-    String model;
-    int cylinders;
+
+
+
+    public int horsePower;
+    public String model;
+    public int cylinders;
+    public String fuelType;
 
 
 
 
-
-    public CivilianEngine(String m){
+    public CivilianEngine(String m, int horsePower){
     this.model = m;
+    this.cylinders = 4;
+    this.fuelType = "Gasoline";
+    this.horsePower = horsePower;
 
     }
 

@@ -13,7 +13,7 @@ public class Director {
         changeBuilder(new CarBuilder());
         SportEngineCreator engineCreator = new SportEngineCreator();
         this.builder.initiateCar(model);
-        this.builder.buildEngine(engineCreator.createEngine("MD-SPRT21"));
+        this.builder.buildEngine(engineCreator.createEngine("MD-SPRT21", 200));
         this.builder.buildEntertainmentSystem(true, "Celadan");
         this.builder.buildColor("Red");
         this.builder.buildAutoTransmission(false);

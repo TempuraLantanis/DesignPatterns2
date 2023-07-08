@@ -5,7 +5,7 @@ public class Car {
     int passengers;
     String model;
     String licenseNumber;
-    Engine engine;
+    EngineInterface engine;
     String exteriorColor;
     String interiorStyle;
     String entertainmentSystem;

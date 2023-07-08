@@ -1,4 +1,4 @@
 public abstract class EngineCreator {
 
-    public abstract EngineInterface createEngine(String model);
+    public abstract EngineInterface createEngine(String model, int horsePower);
 }
