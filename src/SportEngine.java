@@ -1,14 +1,16 @@
-public class SportEngine extends Engine {
+public class SportEngine implements EngineInterface {
+
+
+    int horsePower;
+    String model;
 
     public SportEngine(String model,int horsePower){
-        this.horsePower = horsePower;
+        this.horsePower = horsePower*100;
         this.model = model;
     }
 
 
-    {
-        horsePower = this.horsePower*1000;
-    }
+
 
 
 

@@ -1,34 +1,37 @@
 public class CarBuilder implements CarBuilderInterface {
 
-
-
     Car car;
 
     @Override
     public void reset(){
+        this.car = new Car();
 
     }
 
     @Override
     public void initiateCar(String model) {
-        car.model = model;
+        this.car.model = model;
 
     }
 
 
     @Override
-    public void buildEngine(Engine engine) {
-        car.engine = engine;
+    public void buildEngine(EngineInterface engine) {
+
+
+
+
+
     }
 
 
     @Override
     public void buildInterior(int chair, String stuurPos){
-        car.interiorStyle= "The interior contains "
+        this.car.interiorStyle= "The interior contains "
                 + chair +
                 "with the driverposition at" + stuurPos;
 
-        car.passengers = chair;
+        this.car.passengers = chair;
 
     }
 
@@ -36,11 +39,11 @@ public class CarBuilder implements CarBuilderInterface {
     public void buildEntertainmentSystem(boolean entertainmentSystemExists, String... entertainmentSystemModel) {
         if (entertainmentSystemExists){
             System.out.println("building the Entertainment System");
-            car.entertainmentSystem = "The entertainment system exists with the model" + entertainmentSystemModel;
+            this.car.entertainmentSystem = "The entertainment system exists with the model" + entertainmentSystemModel;
 
         }
         else{
-            car.entertainmentSystem = "This car doesn't have an entertainment system";
+            this.car.entertainmentSystem = "This car doesn't have an entertainment system";
         }
     }
 
@@ -48,23 +51,23 @@ public class CarBuilder implements CarBuilderInterface {
 
     @Override
     public void buildColor(String extcolor) {
-        car.exteriorColor = extcolor;
+        this.car.exteriorColor = extcolor;
 
     }
 
     @Override
-    public void buildTransmission(boolean automatic) {
+    public void buildAutoTransmission(boolean automatic) {
         if(automatic){
-            car.transMissionType = "automatic";
+            this.car.transMissionType = "automatic";
         }
         else {
-            car.transMissionType = "false";
+            this.car.transMissionType = "false";
         }
 
     }
 
     @Override
     public Car getResult() {
-        return car;
+        return this.car;
     }
 }
