@@ -15,7 +15,8 @@ public class PolicyBuilder implements CarBuilderInterface{
 
     @Override
     public void buildEngine(EngineInterface engine) {
-        System.out.println("The " + engine + " must not exceed these limits");
+        this.policy.engineRegulation = "The " + engine + " must not exceed these limits";
+
 
     }
 

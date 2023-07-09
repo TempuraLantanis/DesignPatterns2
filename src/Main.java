@@ -10,11 +10,13 @@ public class Main {
         CarbonDioxideInjector c1 = new CarbonDioxideInjector(car.engine);
         c1.stopEngine();
 
-
         PolicyBuilder policyBuilder = new PolicyBuilder();
         director.makePolicy(policyBuilder);
         Policy policy1 = policyBuilder.getResult();
         policy1.printPolicy();
+
+        FuelType f1 = new FuelType(c1);
+        f1.startEngine();
 
 
     }
