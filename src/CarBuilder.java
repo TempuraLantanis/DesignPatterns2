@@ -5,7 +5,6 @@ public class CarBuilder implements CarBuilderInterface {
     @Override
     public void reset(){
         this.car = new Car();
-
     }
 
     @Override
@@ -32,17 +31,16 @@ public class CarBuilder implements CarBuilderInterface {
     }
 
     @Override
-    public void buildEntertainmentSystem(boolean entertainmentSystemExists, String... entertainmentSystemModel) {
+    public void buildEntertainmentSystem(boolean entertainmentSystemExists, String entertainmentSystemModel) {
         if (entertainmentSystemExists){
-            System.out.println("building the Entertainment System");
-            this.car.entertainmentSystem = "The entertainment system exists with the model" + entertainmentSystemModel;
+            // System.out.println("building the Entertainment System");
+            car.entertainmentSystem = "The entertainment system exists with the model " + entertainmentSystemModel;
 
         }
         else{
             this.car.entertainmentSystem = "This car doesn't have an entertainment system";
         }
     }
-
 
 
     @Override
@@ -62,8 +60,18 @@ public class CarBuilder implements CarBuilderInterface {
 
     }
 
+    
 
     public Car getResult() {
+        System.out.println("Model:" + this.car.model);
+        System.out.println("License number: " + this.car.licenseNumber);
+        System.out.println("Engine: " + this.car.engine);
+        System.out.println("Exterior color: " + this.car.licenseNumber);
+        System.out.println("Interior style: " + this.car.exteriorColor);
+        System.out.println("passenger seats: " + this.car.passengers);
+        System.out.println("Entertainment system: " + this.car.entertainmentSystem);
+        System.out.println("Transmission type: " + this.car.transMissionType);
+        System.out.println("-------------------------------");
         return this.car;
     }
 }

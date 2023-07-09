@@ -5,17 +5,16 @@ public class CarbonDioxideInjector extends EngineMod{
         super(wrapped);
     }
 
-    @Override
-    public void startEngine() {
+        @Override
+        public void startEngine() {
 
-        System.out.println("Starting engine with CO2Injector");
+            System.out.println("Starting engine with CO2Injector with");
 
-    }
+        }
 
-    @Override
-    public void stopEngine() {
-
-        System.out.println("Stopping Dramatically");
+        @Override
+        public void stopEngine() {
+            System.out.println("Stopping engine with CO2Injector");
 
     }
 }
