@@ -12,8 +12,6 @@ public class SportEngine implements EngineInterface {
 
 
 
-
-
     @Override
     public void startEngine() {
         System.out.println("Starting a unmodded SportsEngine with " + this.horsePower + " Horsepower");

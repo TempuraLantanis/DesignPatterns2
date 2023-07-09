@@ -6,6 +6,16 @@ public class Main {
         builder.reset();
         director.makeSportCar(builder);
         Car car = builder.getResult();
+        car.engine.startEngine();
+        CarbonDioxideInjector c1 = new CarbonDioxideInjector(car.engine);
+        c1.stopEngine();
+
+
+        PolicyBuilder policyBuilder = new PolicyBuilder();
+        director.makePolicy(policyBuilder);
+        Policy policy1 = policyBuilder.getResult();
+        policy1.printPolicy();
+
 
     }
 }
